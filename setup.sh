@@ -19,11 +19,5 @@ if [ "$input" == "3" ]; then
     else
         echo "dir exist, activating enviroment"
         source ".venv/bin/activate"
-        if [ ! -f "main.py" ]; then
-            echo "main file not present.....exiting script"
-            exit
-        else   
-            python3 "main.py"
-        fi
     fi
 fi
